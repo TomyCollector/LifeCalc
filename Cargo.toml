@@ -1,0 +1,22 @@
+[package]
+name = "LifeCalc"
+version = "0.1.0"
+edition = "2021"
+readme = "README.md"
+authors = ["Han Damin <handamin0130@besiwol.com>"]
+
+[[bin]]
+name = "LifeCalc"
+path = "src/main.rs"
+
+[workspace]
+members = ["app"]
+default-members = ["app"]
+
+[profile.dev]
+opt-level = 1
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
