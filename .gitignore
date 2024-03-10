@@ -1,2 +1,8 @@
-target
-data
+# Cargo
+target/
+
+# Environment variables
+.env
+
+# Test
+local-data/

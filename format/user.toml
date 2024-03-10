@@ -1,0 +1,16 @@
+title = "user-format"
+
+[user-data]
+name = "-n"
+birth = "-n"
+pin = "-n"
+
+[user-system]
+# "korean" or "year" or "world"
+birth-system = "world"
+# 12 or 24
+time-system = 24
+# "UTC" or "SEOUL"
+time-zone = "UTC"
+#
+auto-pin = false

@@ -10,7 +10,7 @@ name = "LifeCalc"
 path = "src/main.rs"
 
 [workspace]
-members = ["app"]
+members = ["app", "utils"]
 default-members = ["app"]
 
 [profile.dev]
