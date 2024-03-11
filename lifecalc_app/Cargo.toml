@@ -1,0 +1,15 @@
+[package]
+name = "lifecalc_app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dotenv = "*"
+
+crossterm = { version = "0.27.0" }
+ratatui = { version = "0.26.1" }
+strum = { version = "0.26.1" }
+
+lifecalc_tui = { version = "0.1.0", path = "../lifecalc_tui" }
+lifecalc_gui = { version = "0.1.0", path = "../lifecalc_gui" }
+lifecalc_utils = { version = "0.1.0", path = "../lifecalc_utils" }

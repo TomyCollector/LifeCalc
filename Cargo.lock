@@ -25,16 +25,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0942ffc6dcaadf03badf6e6a2d0228460359d5e34b57ccdc720b7382dfbd5ec5"
 
 [[package]]
-name = "app"
-version = "0.1.0"
-dependencies = [
- "crossterm",
- "dotenv",
- "ratatui",
- "utils",
-]
-
-[[package]]
 name = "autocfg"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -165,6 +155,31 @@ name = "libc"
 version = "0.2.153"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "9c198f91728a82281a64e1f4f9eeb25d82cb32a5de251c6bd1b5154d63a8e7bd"
+
+[[package]]
+name = "lifecalc_app"
+version = "0.1.0"
+dependencies = [
+ "crossterm",
+ "dotenv",
+ "lifecalc_gui",
+ "lifecalc_tui",
+ "lifecalc_utils",
+ "ratatui",
+ "strum",
+]
+
+[[package]]
+name = "lifecalc_gui"
+version = "0.1.0"
+
+[[package]]
+name = "lifecalc_tui"
+version = "0.1.0"
+
+[[package]]
+name = "lifecalc_utils"
+version = "0.1.0"
 
 [[package]]
 name = "lock_api"
@@ -416,10 +431,6 @@ name = "unicode-width"
 version = "0.1.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e51733f11c9c4f72aa0c160008246859e340b00807569a0da0e7a1079b27ba85"
-
-[[package]]
-name = "utils"
-version = "0.1.0"
 
 [[package]]
 name = "version_check"

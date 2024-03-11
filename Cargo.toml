@@ -10,8 +10,8 @@ name = "LifeCalc"
 path = "src/main.rs"
 
 [workspace]
-members = ["app", "utils"]
-default-members = ["app"]
+members = ["lifecalc_app", "lifecalc_gui", "lifecalc_tui", "lifecalc_utils"]
+default-members = ["lifecalc_app"]
 
 [profile.dev]
 opt-level = 1
